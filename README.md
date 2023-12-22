@@ -59,5 +59,30 @@ Download the requirements.txt file and run the following command in the terminal
 ``` pip install -r requirements.txt ```
 
 ## Results
-Our models demonstrated high accuracy in detecting ARP spoofing attacks, with the GRU models, in particular, showing superior performance.
+
+Our experimental analysis included several machine learning models, each evaluated for their effectiveness in predicting ARP spoofing attacks. The dataset was divided into features and a target variable, further split into training and testing sets. We employed the SelectKBest method with the f_classif scoring function to optimize the feature space, which enhanced model performance by reducing data dimensionality.
+
+### Traditional Machine Learning Model Accuracies
+|      Traditional     |  Accuracies    |
+| -------------------- | -------------- |
+| Decision Trees       |    99.995%     |
+| Logistic Regression  |    98.742%     |
+| Random Forest        |    99.999%     |
+| Gradient Boosting    |    99.973%     |
+| AdaBoost             |    99.921%     |
+
+These results highlight the robustness of our models in classifying the dataset, affirming the efficacy of the feature selection process.
+
+
+### Recurrent Neural Network (RNN) Model Accuracies
+We also implemented variants of Recurrent Neural Networks (RNNs), including Long Short-Term Memory (LSTM) networks and Gated Recurrent Units (GRUs), to utilize sequential packet information. These models were compared in terms of accuracy and training time over 5 epochs.
+|      RNN Models      |  Accuracies   |
+| -------------------- | ------------- |
+| LSTMs                |    99.83%     |
+| GRU                  |    98.84%     |
+| GRU Reduced          |    99.63%     |
+| GRU Dropout          |    99.50%     |
+| GRU Reduced Dropout  |    99.76%     |
+
+Our results from these advanced RNN models, especially the GRU variants, demonstrated their superior performance in detecting ARP spoofing attacks, confirming our hypothesis about the effectiveness of GRUs in this context.
 
