@@ -52,3 +52,10 @@ The packet rate features (17-20) offer insights into the frequency of packet tra
 Lastly, the inter-packet delay features (21-23) focus on the timing aspect, which is critical for identifying network performance issues such as jitter. The mean and standard deviation of these delays can indicate the consistency of packet timing, while the weight might reflect the relative significance of these delays in the context of the network's overall traffic pattern.
 
 Overall, this dataset provides a rich, multi-faceted view of network traffic, suitable for deep analysis in fields such as network security, traffic management, and performance optimization. Its structured time series approach allows for both real-time and historical analysis of network behavior.
+
+## Downloading necessary packages
+Download the requirements.txt file and run the following command in the terminal to download the necessary packages to run the program.
+
+``` pip install -r requirements.txt ```
+
+
