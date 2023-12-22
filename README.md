@@ -58,4 +58,6 @@ Download the requirements.txt file and run the following command in the terminal
 
 ``` pip install -r requirements.txt ```
 
+## Results
+Our models demonstrated high accuracy in detecting ARP spoofing attacks, with the GRU models, in particular, showing superior performance.
 
